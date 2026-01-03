@@ -1,0 +1,25 @@
+{
+  "name": "rt809f-cloud-bridge",
+  "version": "1.0.0",
+  "description": "RT809F Bridge deployed on Google Cloud Run",
+  "scripts": {
+    "start": "python main.py",
+    "dev": "python main.py --debug",
+    "deploy": "bash deploy.sh",
+    "test": "pytest tests/",
+    "lint": "flake8 .",
+    "generate-files": "python main.py generate"
+  },
+  "dependencies": {
+    "fastapi": "^0.104.1",
+    "uvicorn": "^0.24.0",
+    "pydantic": "^2.4.2",
+    "websockets": "^12.0",
+    "aiohttp": "^3.9.0"
+  },
+  "devDependencies": {
+    "pytest": "^7.4.0",
+    "pytest-asyncio": "^0.21.0",
+    "flake8": "^6.0.0"
+  }
+}
